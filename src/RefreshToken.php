@@ -11,7 +11,7 @@ class RefreshToken extends Model
      *
      * @var string
      */
-    protected $table = 'oauth_refresh_tokens';
+    protected $table = 'oauth__refresh_tokens';
 
     /**
      * Indicates if the IDs are auto-incrementing.
