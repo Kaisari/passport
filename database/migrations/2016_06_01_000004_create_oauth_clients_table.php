@@ -15,7 +15,7 @@ class CreateOauthClientsTable extends Migration
     {
         Schema::create('oauth__clients', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('user_id')->index()->nullable();
+            $table->uuid('user_id')->index()->nullable();
             $table->string('name');
             $table->string('secret', 100)->nullable();
             $table->text('redirect');
