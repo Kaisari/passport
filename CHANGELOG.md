@@ -1,6 +1,50 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/passport/compare/v8.0.0...8.x)
+## [Unreleased](https://github.com/laravel/passport/compare/v8.3.1...8.x)
+
+
+## [v8.3.1 (2020-01-29)](https://github.com/laravel/passport/compare/v8.3.0...v8.3.1)
+
+### Fixed
+- Remove foreign keys ([20e9b66](https://github.com/laravel/passport/commit/20e9b66fcd003ba41301fc5de23b9892e307051a))
+
+
+## [v8.3.0 (2020-01-28)](https://github.com/laravel/passport/compare/v8.2.0...v8.3.0)
+
+### Added
+- Add a Passport Client factory to Passport publishing ([#1171](https://github.com/laravel/passport/pull/1171))
+
+### Changed
+- Use bigIncrements and indexes on relationships ([#1169](https://github.com/laravel/passport/pull/1169), [140a693](https://github.com/laravel/passport/commit/140a693a079f5611b3342360cde00b10e94162c1))
+
+
+## [v8.2.0 (2020-01-07)](https://github.com/laravel/passport/compare/v8.1.0...v8.2.0)
+
+### Added
+- Update ClientCommand to support public clients ([#1151](https://github.com/laravel/passport/pull/1151))
+- Purge Command for revoked and/or expired tokens and auth codes ([#1159](https://github.com/laravel/passport/pull/1159), [6c1ea42](https://github.com/laravel/passport/commit/6c1ea42e66100b15ecad89b0e1c5ccaa12b4331b))
+
+### Changed
+- Replace deprecated package and namespaces ([#1158](https://github.com/laravel/passport/pull/1158))
+
+
+## [v8.1.0 (2019-12-30)](https://github.com/laravel/passport/compare/v8.0.2...v8.1.0)
+
+### Added
+- Allow access to HTTP response status code on OAuthServerException ([#1148](https://github.com/laravel/passport/pull/1148))
+- Modify UserRepository to check for 'findAndValidateForPassport' method ([#1144](https://github.com/laravel/passport/pull/1144))
+
+
+## [v8.0.2 (2019-11-26)](https://github.com/laravel/passport/compare/v8.0.1...v8.0.2)
+
+### Changed
+- Add abstract CheckCredentials middleware and allows to create ([#1127](https://github.com/laravel/passport/pull/1127))
+
+
+## [v8.0.1 (2019-11-19)](https://github.com/laravel/passport/compare/v8.0.0...v8.0.1)
+
+### Fixed
+- Fix `actingAsClient` testing method ([#1119](https://github.com/laravel/passport/pull/1119))
 
 
 ## [v8.0.0 (2019-10-29)](https://github.com/laravel/passport/compare/v7.5.1...v8.0.0)

@@ -51,10 +51,15 @@ class PassportServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/js/components' => base_path('resources/js/components/passport'),
             ], 'passport-components');
 
+            $this->publishes([
+                __DIR__.'/../database/factories' => database_path('factories'),
+            ], 'passport-factories');
+
             $this->commands([
                 Console\InstallCommand::class,
                 Console\ClientCommand::class,
                 Console\KeysCommand::class,
+                Console\PurgeCommand::class,
             ]);
         }
     }
@@ -229,7 +234,7 @@ class PassportServiceProvider extends ServiceProvider
     /**
      * Create a CryptKey instance without permissions check.
      *
-     * @param string $key
+     * @param  string  $key
      * @return \League\OAuth2\Server\CryptKey
      */
     protected function makeCryptKey($type)
